@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".days.FriFragment">
+    <FrameLayout
+        android:id="@+id/Fricontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/FriCard"
+            android:visibility ="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart = "40dp"
+            android:layout_marginEnd = "40dp"
+            android:layout_marginTop = "100dp"
+            android:layout_marginBottom = "100dp"
+            app:cardBackgroundColor="#41FFAF"
+            app:cardCornerRadius="17dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/breakf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="Breakfast :-"
+                    android:fontFamily="@font/outfitmedium"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="120dp"
+                    android:textStyle="bold"
+                    android:textColor="#2B2B2B"
+                    />
+                <TextView
+                    android:id="@+id/breakfast"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/breakf"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:text= "Smoothie with spinach, banana, almond milk, and a scoop of protein powder."
+                    android:fontFamily="@font/outfitmedium"
+                    />
+
+                <TextView
+                    android:id="@+id/midf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/breakfast"
+                    android:text="Mid - Morning Snack :-"
+                    android:fontFamily="@font/outfitmedium"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#2B2B2B"
+                    />
+                <TextView
+                    android:id="@+id/midfood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/midf"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:text= " A handful of mixed berries and cashews."
+                    android:fontFamily="@font/outfitmedium"
+
+                    /><TextView
+                android:id="@+id/Lunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/midfood"
+                android:text="Lunch :-"
+                android:fontFamily="@font/outfitmedium"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textColor="#2B2B2B"
+                />
+                <TextView
+                    android:id="@+id/LunchFood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/Lunch"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:text= "Quinoa salad with black beans, corn, and avocado."
+                    android:fontFamily="@font/outfitmedium"
+                    />
+
+                <TextView
+                    android:id="@+id/eve"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/LunchFood"
+                    android:text="Evening Snack :-"
+                    android:fontFamily="@font/outfitmedium"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#2B2B2B"
+                    />
+                <TextView
+                    android:id="@+id/eveFood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/eve"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:text= "Sliced pear with cottage cheese."
+                    android:fontFamily="@font/outfitmedium"
+                    />
+
+                <TextView
+                    android:id="@+id/dinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/eveFood"
+                    android:text="Dinner :-"
+                    android:fontFamily="@font/outfitmedium"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#2B2B2B"
+                    />
+                <TextView
+                    android:id="@+id/dinFood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/dinner"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="14sp"
+                    android:text= " Grilled fish or a paneer curry with brown rice and a side of sautéed zucchini."
+                    android:fontFamily="@font/outfitmedium"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+</FrameLayout>
