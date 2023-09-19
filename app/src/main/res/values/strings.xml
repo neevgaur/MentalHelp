@@ -2,4 +2,18 @@
     <string name="app_name">Mental Helper</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="self_evaluation">Self-Evaluation</string>
+    <string name="progress">Progress</string>
+    <string name="cure">Cure</string>
+    <string name="joy">Joy</string>
+    <string name="need_help_now">Need Help Now</string>
+    <string name="diet">Diet</string>
+    <string name="hello_user">Hello, User!</string>
+    <string name="exercise">Exercise</string>
+    <string name="meditation">Meditation</string>
+    <string name="music">Music</string>
+    <string name="yoga">Yoga</string>
+    <string name="inhale_exhale">Inhale-Exhale</string>
+    <string name="get_ready_for">GET READY FOR</string>
+    <string name="upcoming_exercise">UPCOMING EXERCISE:</string>
 </resources>

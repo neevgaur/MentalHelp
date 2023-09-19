@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/shade2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="30sp"
+        android:text="@string/hello_user"
+        android:textColor="@color/shade4"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_diet"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="@string/diet"
+                android:textSize="24sp"
+                android:textStyle="italic"
+                android:background="@drawable/install_btn_background_white"
+                android:clickable="true"
+                android:drawableTint="@color/black"
+                android:focusable="true"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/shade4"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_progress"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="@string/progress"
+                android:textSize="24sp"
+                android:textStyle="italic"
+                android:background="@drawable/install_btn_background_white"
+                android:clickable="true"
+                android:drawableTint="@color/black"
+                android:focusable="true"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/shade4"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_cure"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="@string/cure"
+                android:textSize="24sp"
+                android:textStyle="italic"
+                android:background="@drawable/install_btn_background_white"
+                android:clickable="true"
+                android:drawableTint="@color/black"
+                android:focusable="true"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/shade4"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_joy"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="@string/joy"
+                android:textSize="24sp"
+                android:textStyle="italic"
+                android:background="@drawable/install_btn_background_white"
+                android:clickable="true"
+                android:drawableTint="@color/black"
+                android:focusable="true"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/shade4"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_self_evaluation"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="@string/self_evaluation"
+                android:textSize="24sp"
+                android:textStyle="italic"
+                android:background="@drawable/install_btn_background_white"
+                android:clickable="true"
+                android:drawableTint="@color/black"
+                android:focusable="true"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/shade4"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_need_help_now"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="@string/need_help_now"
+                android:textSize="24sp"
+                android:textStyle="italic"
+                android:background="@drawable/install_btn_background_white"
+                android:clickable="true"
+                android:drawableTint="@color/black"
+                android:focusable="true"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/shade4"
+                />
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
