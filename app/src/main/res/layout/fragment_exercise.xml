@@ -6,13 +6,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ExerciseFragment">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarExercise"
-        android:layout_width="match_parent"
-        android:layout_height="?android:attr/actionBarSize"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/main_app_background"
-        android:titleTextColor="@color/white"/>
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        android:id="@+id/toolbarExercise"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?android:attr/actionBarSize"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:background="@drawable/main_app_background"-->
+<!--        android:titleTextColor="@color/white"/>-->
 
     <TextView
         android:id="@+id/tvTitle"
@@ -36,7 +36,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbarExercise">
+       app:layout_constraintTop_toTopOf="parent">
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -111,7 +111,7 @@
         android:scaleType="fitXY"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/tvExerciseName"
-        app:layout_constraintTop_toBottomOf="@id/toolbarExercise"
+        app:layout_constraintTop_toTopOf="parent"
         />
 
     <TextView
