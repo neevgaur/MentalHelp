@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/friFragment2">
+
+    <fragment
+        android:id="@+id/mondayFragment"
+        android:name="com.gaurneev.mentalhelper.days.MondayFragment"
+        android:label="fragment_monday"
+        tools:layout="@layout/fragment_monday" >
+        <action
+            android:id="@+id/action_mondayFragment_to_dietFragment"
+            app:destination="@id/dietFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dietFragment"
+        android:name="com.gaurneev.mentalhelper.DietFragment"
+        android:label="fragment_diet"
+        tools:layout="@layout/fragment_diet" >
+        <action
+            android:id="@+id/action_dietFragment_to_mondayFragment"
+            app:destination="@id/mondayFragment" />
+        <action
+            android:id="@+id/action_dietFragment_to_thurFragment"
+            app:destination="@id/thurFragment" />
+        <action
+            android:id="@+id/action_dietFragment_to_sunFragment"
+            app:destination="@id/sunFragment" />
+        <action
+            android:id="@+id/action_dietFragment_to_satFragment"
+            app:destination="@id/satFragment" />
+        <action
+            android:id="@+id/action_dietFragment_to_tuesFragment"
+            app:destination="@id/tuesFragment" />
+        <action
+            android:id="@+id/action_dietFragment_to_friFragment2"
+            app:destination="@id/friFragment2" />
+        <action
+            android:id="@+id/action_dietFragment_to_wedFragment"
+            app:destination="@id/wedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/satFragment"
+        android:name="com.gaurneev.mentalhelper.days.satFragment"
+        android:label="fragment_sat"
+        tools:layout="@layout/fragment_sat" >
+        <action
+            android:id="@+id/action_satFragment_to_dietFragment"
+            app:destination="@id/dietFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sunFragment"
+        android:name="com.gaurneev.mentalhelper.days.sunFragment"
+        android:label="fragment_sun"
+        tools:layout="@layout/fragment_sun" >
+        <action
+            android:id="@+id/action_sunFragment_to_dietFragment"
+            app:destination="@id/dietFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thurFragment"
+        android:name="com.gaurneev.mentalhelper.days.thurFragment"
+        android:label="fragment_thur"
+        tools:layout="@layout/fragment_thur" >
+        <action
+            android:id="@+id/action_thurFragment_to_dietFragment"
+            app:destination="@id/dietFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tuesFragment"
+        android:name="com.gaurneev.mentalhelper.days.TuesFragment"
+        android:label="fragment_tues"
+        tools:layout="@layout/fragment_tues" >
+        <action
+            android:id="@+id/action_tuesFragment_to_dietFragment"
+            app:destination="@id/dietFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wedFragment"
+        android:name="com.gaurneev.mentalhelper.days.wedFragment"
+        android:label="fragment_wed"
+        tools:layout="@layout/fragment_wed" >
+        <action
+            android:id="@+id/action_wedFragment_to_dietFragment"
+            app:destination="@id/dietFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/friFragment2"
+        android:name="com.gaurneev.mentalhelper.days.FriFragment"
+        android:label="fragment_fri"
+        tools:layout="@layout/fragment_fri" >
+        <action
+            android:id="@+id/action_friFragment2_to_dietFragment"
+            app:destination="@id/dietFragment" />
+    </fragment>
+</navigation>
