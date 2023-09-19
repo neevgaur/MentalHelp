@@ -3,12 +3,171 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_gradient"
     tools:context=".DietFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <FrameLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_app"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_gravity="top"
+                android:layout_margin="50dp"
+                android:src="@drawable/meal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_monday"
+                android:layout_width="170dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/outfitmedium"
+                android:gravity="center"
+                android:text="Monday"
+                android:textAllCaps="false"
+                android:textColor="#2B2B2B"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toStartOf="@id/guideline"
+                app:layout_constraintTop_toBottomOf="@id/iv_app" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_tuesday"
+                android:layout_width="170dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/outfitmedium"
+                android:gravity="center"
+                android:text="Tuesday"
+                android:textAllCaps="false"
+                android:textColor="#2B2B2B"
+                android:textSize="25dp"
+                app:layout_constraintStart_toStartOf="@id/guideline"
+                app:layout_constraintTop_toBottomOf="@id/iv_app"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_wed"
+                android:layout_width="170dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/outfitmedium"
+                android:gravity="center"
+                android:text="Wednesday"
+                android:textAllCaps="false"
+                android:textColor="#2B2B2B"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toStartOf="@id/guideline"
+                app:layout_constraintTop_toBottomOf="@id/btn_monday"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_thur"
+                android:layout_width="170dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/outfitmedium"
+                android:gravity="center"
+                android:text="Thursday"
+                android:textAllCaps="false"
+                android:textColor="#2B2B2B"
+                android:textSize="25dp"
+                app:layout_constraintStart_toStartOf="@id/guideline"
+                app:layout_constraintTop_toBottomOf="@id/btn_tuesday"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_fri"
+                android:layout_width="170dp"
+                android:layout_height="70dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/outfitmedium"
+                android:gravity="center"
+                android:text="Friday"
+                android:textAllCaps="false"
+                android:textColor="#2B2B2B"
+                android:textSize="25dp"
+                app:layout_constraintEnd_toStartOf="@id/guideline"
+                app:layout_constraintTop_toBottomOf="@id/btn_wed"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_sat"
+                android:layout_width="170dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/outfitmedium"
+                android:gravity="center"
+                android:text="Saturday"
+                android:textAllCaps="false"
+                android:textColor="#2B2B2B"
+                android:textSize="25dp"
+                app:layout_constraintStart_toStartOf="@id/guideline"
+                app:layout_constraintTop_toBottomOf="@id/btn_thur"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_sun"
+                android:layout_width="170dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/outfitmedium"
+                android:gravity="center"
+                android:text="Sunday"
+                android:textAllCaps="false"
+                android:textColor="#2B2B2B"
+                android:textSize="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_fri"
+                app:layout_constraintEnd_toEndOf="parent"
+                />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+
 
 </FrameLayout>
