@@ -1,4 +1,4 @@
-package com.example.a7minuteworkout
+package com.gaurneev.mentalhelper
 
 class ExerciseModel(
     private var id: Int,
